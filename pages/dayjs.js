@@ -5,12 +5,12 @@ import customParseFormat from "dayjs/plugin/customParseFormat";
 import relativeTime from "dayjs/plugin/relativeTime";
 
 dayjs.extend(customParseFormat); // strict checking valid date
-dayjs.extend(relativeTime); // required for pandemic started
+dayjs.extend(relativeTime); // required for fromNow()
 
 const dayjs1 = () => {
   const dateFormat = "YYYY-MM-DD";
   let today = dayjs();
-  const pandemicStart = "2020-03-11";
+  const pandemicStart = "2020-02-31";
 
   return (
     <FormControl m="200px">

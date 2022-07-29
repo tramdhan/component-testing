@@ -11,7 +11,7 @@ const datefns = () => {
     <FormControl m="200px">
       <FormLabel>Dayjs Date:</FormLabel>
       <Box fontSize={32} mb="20px">
-        {format(new Date(testdate), "yyyy-MM-dd")}
+        {format(new Date(testdate), dateFormat)}
       </Box>
 
       <FormLabel>Valid?:</FormLabel>
